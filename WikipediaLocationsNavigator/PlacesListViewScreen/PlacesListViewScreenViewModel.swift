@@ -58,10 +58,15 @@ final class PlacesListViewScreenViewModel {
         let urlToOpen = URL(string: urlString)
 
         guard let urlToOpen else {
-            view?.displayError(with: "The URL string \(urlString) is invalid", tryAgain: false)
+            view?.displayError(with: "The URL \(urlString) is invalid", tryAgain: false)
             return
         }
-        _ = urlOpener.openURL(urlToOpen)
+
+        let didOpenURL = urlOpener.openURL(urlToOpen)
+
+        if !didOpenURL {
+            view?.displayError(with: "The URL \(urlString) cannot be opened", tryAgain: false)
+        }
     }
 }
 
