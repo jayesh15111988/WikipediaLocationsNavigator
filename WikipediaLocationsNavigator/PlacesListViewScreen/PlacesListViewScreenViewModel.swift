@@ -21,6 +21,10 @@ final class PlacesListViewScreenViewModel {
     private let urlOpener: URLOpenable
     weak var view: PlacesListViewable?
 
+    struct Location {
+        let name: String
+    }
+
     init(networkService: RequestHandling, urlOpener: URLOpenable = UIApplication.shared) {
         self.networkService = networkService
         self.urlOpener = urlOpener
@@ -32,11 +36,14 @@ final class PlacesListViewScreenViewModel {
 
             guard let self else { return }
 
-            switch result {
-            case .success(let locations):
-                self.view?.locationsLoaded(locations: locations.locations)
-            case .failure(let dataLoadError):
-                self.view?.displayError(with: dataLoadError.errorMessageString())
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let locations):
+                    let validLocations = locations.locations.map { $0.name }.compactMap { $0 }.map { Location(name: $0) }
+                    self.view?.locationsLoaded(locations: validLocations)
+                case .failure(let dataLoadError):
+                    self.view?.displayError(with: dataLoadError.errorMessageString(), tryAgain: true)
+                }
             }
         }
     }
@@ -51,14 +58,10 @@ final class PlacesListViewScreenViewModel {
         let urlToOpen = URL(string: urlString)
 
         guard let urlToOpen else {
-            view?.displayError(with: "The URL string \(urlString) is invalid")
+            view?.displayError(with: "The URL string \(urlString) is invalid", tryAgain: false)
             return
         }
-        if urlOpener.canOpenURL(urlToOpen) {
-            _ = urlOpener.openURL(urlToOpen)
-        } else {
-            view?.displayError(with: "Cannot open the URL \(urlString) in the Wikipedia app")
-        }
+        _ = urlOpener.openURL(urlToOpen)
     }
 }
 

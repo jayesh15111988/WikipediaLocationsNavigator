@@ -13,8 +13,8 @@ struct Locations: Decodable {
     let locations: [Location]
 
     struct Location: Decodable {
-        let name: String
-        let latitude: CLLocationDegrees
-        let longitude: CLLocationDegrees
+        let name: String?
+        let lat: CLLocationDegrees
+        let long: CLLocationDegrees
     }
 }

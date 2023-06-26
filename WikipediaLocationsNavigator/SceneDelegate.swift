@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewModel = PlacesListViewScreenViewModel(networkService: RequestHandler())
         let viewController = PlacesListViewScreenViewController(viewModel: viewModel)
 
+        viewModel.view = viewController
+
         window.rootViewController = UINavigationController(rootViewController: viewController)
         window.makeKeyAndVisible()
 
