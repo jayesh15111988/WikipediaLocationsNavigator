@@ -14,12 +14,19 @@
 		910257532A49FAA800AA5C5F /* PlacesListViewScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257522A49FAA800AA5C5F /* PlacesListViewScreenViewController.swift */; };
 		910257552A49FAB500AA5C5F /* PlacesListViewScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257542A49FAB500AA5C5F /* PlacesListViewScreenViewModel.swift */; };
 		910257582A49FBBE00AA5C5F /* AlertDisplayUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257572A49FBBE00AA5C5F /* AlertDisplayUtility.swift */; };
+		9102575B2A4A10AB00AA5C5F /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 9102575A2A4A10AB00AA5C5F /* locations.json */; };
+		9102575E2A4A10D200AA5C5F /* MockRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102575D2A4A10D200AA5C5F /* MockRequestHandler.swift */; };
+		910257602A4A10E000AA5C5F /* MockPlacesListViewScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102575F2A4A10E000AA5C5F /* MockPlacesListViewScreenViewController.swift */; };
+		910257632A4A10FE00AA5C5F /* DataLoadErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257622A4A10FE00AA5C5F /* DataLoadErrorTests.swift */; };
+		910257652A4A111900AA5C5F /* MockUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257642A4A111900AA5C5F /* MockUIApplication.swift */; };
+		910257672A4A114900AA5C5F /* PlacesListViewScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257662A4A114900AA5C5F /* PlacesListViewScreenViewModelTests.swift */; };
+		9102576A2A4A115800AA5C5F /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910257692A4A115800AA5C5F /* JSONReader.swift */; };
+		9102576C2A4A117800AA5C5F /* MockAlertDisplayUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102576B2A4A117800AA5C5F /* MockAlertDisplayUtility.swift */; };
 		912739CA2A49AB0500AF91B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739C92A49AB0500AF91B7 /* AppDelegate.swift */; };
 		912739CC2A49AB0500AF91B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739CB2A49AB0500AF91B7 /* SceneDelegate.swift */; };
 		912739CE2A49AB0500AF91B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739CD2A49AB0500AF91B7 /* ViewController.swift */; };
 		912739D32A49AB0700AF91B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912739D22A49AB0700AF91B7 /* Assets.xcassets */; };
 		912739D62A49AB0700AF91B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912739D42A49AB0700AF91B7 /* LaunchScreen.storyboard */; };
-		912739E12A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */; };
 		912739EB2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739EA2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift */; };
 		912739ED2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739EC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +56,14 @@
 		910257522A49FAA800AA5C5F /* PlacesListViewScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewScreenViewController.swift; sourceTree = "<group>"; };
 		910257542A49FAB500AA5C5F /* PlacesListViewScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewScreenViewModel.swift; sourceTree = "<group>"; };
 		910257572A49FBBE00AA5C5F /* AlertDisplayUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayUtility.swift; sourceTree = "<group>"; };
+		9102575A2A4A10AB00AA5C5F /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		9102575D2A4A10D200AA5C5F /* MockRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestHandler.swift; sourceTree = "<group>"; };
+		9102575F2A4A10E000AA5C5F /* MockPlacesListViewScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlacesListViewScreenViewController.swift; sourceTree = "<group>"; };
+		910257622A4A10FE00AA5C5F /* DataLoadErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadErrorTests.swift; sourceTree = "<group>"; };
+		910257642A4A111900AA5C5F /* MockUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUIApplication.swift; sourceTree = "<group>"; };
+		910257662A4A114900AA5C5F /* PlacesListViewScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewScreenViewModelTests.swift; sourceTree = "<group>"; };
+		910257692A4A115800AA5C5F /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		9102576B2A4A117800AA5C5F /* MockAlertDisplayUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertDisplayUtility.swift; sourceTree = "<group>"; };
 		912739C62A49AB0500AF91B7 /* WikipediaLocationsNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikipediaLocationsNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912739C92A49AB0500AF91B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912739CB2A49AB0500AF91B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +72,6 @@
 		912739D52A49AB0700AF91B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		912739D72A49AB0700AF91B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912739DC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorTests.swift; sourceTree = "<group>"; };
 		912739E62A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsNavigatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912739EA2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorUITests.swift; sourceTree = "<group>"; };
 		912739EC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -123,6 +137,42 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		910257592A4A109F00AA5C5F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9102575D2A4A10D200AA5C5F /* MockRequestHandler.swift */,
+				9102575F2A4A10E000AA5C5F /* MockPlacesListViewScreenViewController.swift */,
+				910257642A4A111900AA5C5F /* MockUIApplication.swift */,
+				9102576B2A4A117800AA5C5F /* MockAlertDisplayUtility.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9102575C2A4A10BA00AA5C5F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9102575A2A4A10AB00AA5C5F /* locations.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		910257612A4A10F600AA5C5F /* DataLoadErrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				910257622A4A10FE00AA5C5F /* DataLoadErrorTests.swift */,
+				910257662A4A114900AA5C5F /* PlacesListViewScreenViewModelTests.swift */,
+			);
+			path = DataLoadErrorTests;
+			sourceTree = "<group>";
+		};
+		910257682A4A114F00AA5C5F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				910257692A4A115800AA5C5F /* JSONReader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		912739BD2A49AB0500AF91B7 = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +213,10 @@
 		912739DF2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */,
+				910257682A4A114F00AA5C5F /* Utilities */,
+				910257612A4A10F600AA5C5F /* DataLoadErrorTests */,
+				9102575C2A4A10BA00AA5C5F /* JSON */,
+				910257592A4A109F00AA5C5F /* Mocks */,
 			);
 			path = WikipediaLocationsNavigatorTests;
 			sourceTree = "<group>";
@@ -290,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9102575B2A4A10AB00AA5C5F /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +378,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912739E12A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift in Sources */,
+				910257602A4A10E000AA5C5F /* MockPlacesListViewScreenViewController.swift in Sources */,
+				910257672A4A114900AA5C5F /* PlacesListViewScreenViewModelTests.swift in Sources */,
+				910257632A4A10FE00AA5C5F /* DataLoadErrorTests.swift in Sources */,
+				910257652A4A111900AA5C5F /* MockUIApplication.swift in Sources */,
+				9102576C2A4A117800AA5C5F /* MockAlertDisplayUtility.swift in Sources */,
+				9102576A2A4A115800AA5C5F /* JSONReader.swift in Sources */,
+				9102575E2A4A10D200AA5C5F /* MockRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
