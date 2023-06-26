@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912739CA2A49AB0500AF91B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739C92A49AB0500AF91B7 /* AppDelegate.swift */; };
+		912739CC2A49AB0500AF91B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739CB2A49AB0500AF91B7 /* SceneDelegate.swift */; };
+		912739CE2A49AB0500AF91B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739CD2A49AB0500AF91B7 /* ViewController.swift */; };
+		912739D12A49AB0500AF91B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912739CF2A49AB0500AF91B7 /* Main.storyboard */; };
+		912739D32A49AB0700AF91B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 912739D22A49AB0700AF91B7 /* Assets.xcassets */; };
+		912739D62A49AB0700AF91B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912739D42A49AB0700AF91B7 /* LaunchScreen.storyboard */; };
+		912739E12A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */; };
+		912739EB2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739EA2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift */; };
+		912739ED2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912739EC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		912739DD2A49AB0800AF91B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 912739BE2A49AB0500AF91B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912739C52A49AB0500AF91B7;
+			remoteInfo = WikipediaLocationsNavigator;
+		};
+		912739E72A49AB0800AF91B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 912739BE2A49AB0500AF91B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 912739C52A49AB0500AF91B7;
+			remoteInfo = WikipediaLocationsNavigator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		912739C62A49AB0500AF91B7 /* WikipediaLocationsNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikipediaLocationsNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		912739C92A49AB0500AF91B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		912739CB2A49AB0500AF91B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		912739CD2A49AB0500AF91B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		912739D02A49AB0500AF91B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		912739D22A49AB0700AF91B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		912739D52A49AB0700AF91B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		912739D72A49AB0700AF91B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912739DC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorTests.swift; sourceTree = "<group>"; };
+		912739E62A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikipediaLocationsNavigatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912739EA2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorUITests.swift; sourceTree = "<group>"; };
+		912739EC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaLocationsNavigatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		912739C32A49AB0500AF91B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739D92A49AB0800AF91B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739E32A49AB0800AF91B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		912739BD2A49AB0500AF91B7 = {
+			isa = PBXGroup;
+			children = (
+				912739C82A49AB0500AF91B7 /* WikipediaLocationsNavigator */,
+				912739DF2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests */,
+				912739E92A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests */,
+				912739C72A49AB0500AF91B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		912739C72A49AB0500AF91B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				912739C62A49AB0500AF91B7 /* WikipediaLocationsNavigator.app */,
+				912739DC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.xctest */,
+				912739E62A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		912739C82A49AB0500AF91B7 /* WikipediaLocationsNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				912739C92A49AB0500AF91B7 /* AppDelegate.swift */,
+				912739CB2A49AB0500AF91B7 /* SceneDelegate.swift */,
+				912739CD2A49AB0500AF91B7 /* ViewController.swift */,
+				912739CF2A49AB0500AF91B7 /* Main.storyboard */,
+				912739D22A49AB0700AF91B7 /* Assets.xcassets */,
+				912739D42A49AB0700AF91B7 /* LaunchScreen.storyboard */,
+				912739D72A49AB0700AF91B7 /* Info.plist */,
+			);
+			path = WikipediaLocationsNavigator;
+			sourceTree = "<group>";
+		};
+		912739DF2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				912739E02A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift */,
+			);
+			path = WikipediaLocationsNavigatorTests;
+			sourceTree = "<group>";
+		};
+		912739E92A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				912739EA2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift */,
+				912739EC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift */,
+			);
+			path = WikipediaLocationsNavigatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		912739C52A49AB0500AF91B7 /* WikipediaLocationsNavigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912739F02A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigator" */;
+			buildPhases = (
+				912739C22A49AB0500AF91B7 /* Sources */,
+				912739C32A49AB0500AF91B7 /* Frameworks */,
+				912739C42A49AB0500AF91B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikipediaLocationsNavigator;
+			productName = WikipediaLocationsNavigator;
+			productReference = 912739C62A49AB0500AF91B7 /* WikipediaLocationsNavigator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		912739DB2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912739F32A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigatorTests" */;
+			buildPhases = (
+				912739D82A49AB0800AF91B7 /* Sources */,
+				912739D92A49AB0800AF91B7 /* Frameworks */,
+				912739DA2A49AB0800AF91B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				912739DE2A49AB0800AF91B7 /* PBXTargetDependency */,
+			);
+			name = WikipediaLocationsNavigatorTests;
+			productName = WikipediaLocationsNavigatorTests;
+			productReference = 912739DC2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		912739E52A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912739F62A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigatorUITests" */;
+			buildPhases = (
+				912739E22A49AB0800AF91B7 /* Sources */,
+				912739E32A49AB0800AF91B7 /* Frameworks */,
+				912739E42A49AB0800AF91B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				912739E82A49AB0800AF91B7 /* PBXTargetDependency */,
+			);
+			name = WikipediaLocationsNavigatorUITests;
+			productName = WikipediaLocationsNavigatorUITests;
+			productReference = 912739E62A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		912739BE2A49AB0500AF91B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					912739C52A49AB0500AF91B7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					912739DB2A49AB0800AF91B7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 912739C52A49AB0500AF91B7;
+					};
+					912739E52A49AB0800AF91B7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 912739C52A49AB0500AF91B7;
+					};
+				};
+			};
+			buildConfigurationList = 912739C12A49AB0500AF91B7 /* Build configuration list for PBXProject "WikipediaLocationsNavigator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 912739BD2A49AB0500AF91B7;
+			productRefGroup = 912739C72A49AB0500AF91B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				912739C52A49AB0500AF91B7 /* WikipediaLocationsNavigator */,
+				912739DB2A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests */,
+				912739E52A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		912739C42A49AB0500AF91B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912739D62A49AB0700AF91B7 /* LaunchScreen.storyboard in Resources */,
+				912739D32A49AB0700AF91B7 /* Assets.xcassets in Resources */,
+				912739D12A49AB0500AF91B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739DA2A49AB0800AF91B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739E42A49AB0800AF91B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		912739C22A49AB0500AF91B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912739CE2A49AB0500AF91B7 /* ViewController.swift in Sources */,
+				912739CA2A49AB0500AF91B7 /* AppDelegate.swift in Sources */,
+				912739CC2A49AB0500AF91B7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739D82A49AB0800AF91B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912739E12A49AB0800AF91B7 /* WikipediaLocationsNavigatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912739E22A49AB0800AF91B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912739EB2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITests.swift in Sources */,
+				912739ED2A49AB0800AF91B7 /* WikipediaLocationsNavigatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		912739DE2A49AB0800AF91B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912739C52A49AB0500AF91B7 /* WikipediaLocationsNavigator */;
+			targetProxy = 912739DD2A49AB0800AF91B7 /* PBXContainerItemProxy */;
+		};
+		912739E82A49AB0800AF91B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 912739C52A49AB0500AF91B7 /* WikipediaLocationsNavigator */;
+			targetProxy = 912739E72A49AB0800AF91B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		912739CF2A49AB0500AF91B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912739D02A49AB0500AF91B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		912739D42A49AB0700AF91B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				912739D52A49AB0700AF91B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		912739EE2A49AB0800AF91B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		912739EF2A49AB0800AF91B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		912739F12A49AB0800AF91B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WikipediaLocationsNavigator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		912739F22A49AB0800AF91B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WikipediaLocationsNavigator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		912739F42A49AB0800AF91B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikipediaLocationsNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikipediaLocationsNavigator";
+			};
+			name = Debug;
+		};
+		912739F52A49AB0800AF91B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WikipediaLocationsNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WikipediaLocationsNavigator";
+			};
+			name = Release;
+		};
+		912739F72A49AB0800AF91B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikipediaLocationsNavigator;
+			};
+			name = Debug;
+		};
+		912739F82A49AB0800AF91B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MV3J9MQS8N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = XYZ.WikipediaLocationsNavigatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WikipediaLocationsNavigator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		912739C12A49AB0500AF91B7 /* Build configuration list for PBXProject "WikipediaLocationsNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912739EE2A49AB0800AF91B7 /* Debug */,
+				912739EF2A49AB0800AF91B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912739F02A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912739F12A49AB0800AF91B7 /* Debug */,
+				912739F22A49AB0800AF91B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912739F32A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912739F42A49AB0800AF91B7 /* Debug */,
+				912739F52A49AB0800AF91B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912739F62A49AB0800AF91B7 /* Build configuration list for PBXNativeTarget "WikipediaLocationsNavigatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912739F72A49AB0800AF91B7 /* Debug */,
+				912739F82A49AB0800AF91B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 912739BE2A49AB0500AF91B7 /* Project object */;
+}
