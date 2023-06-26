@@ -37,6 +37,13 @@ class PlacesListViewScreenViewController: UIViewController, PlacesListViewable {
         static let estimatedRowHeight: CGFloat = 44.0
     }
 
+    private let searchBar: UISearchBar = {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.placeholder = "Enter Location (Tap search to find)"
+        return searchBar
+    }()
+
     private let viewModel: PlacesListViewScreenViewModel
     private let alertDisplayUtility: AlertDisplayable
 
@@ -63,18 +70,27 @@ class PlacesListViewScreenViewController: UIViewController, PlacesListViewable {
         self.view.backgroundColor = .white
         view.addSubview(tableView)
         view.addSubview(activityIndicatorView)
+        view.addSubview(searchBar)
 
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.reuseIdentifier)
     }
 
     private func layoutViews() {
+
+        NSLayoutConstraint.activate([
+            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            searchBar.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            searchBar.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+        ])
+
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
 
@@ -136,5 +152,17 @@ extension PlacesListViewScreenViewController: UITableViewDelegate {
 extension UITableViewCell {
     static var reuseIdentifier: String {
         return String(describing: self)
+    }
+}
+
+//MARK: UISearchBarDelegate methods
+extension PlacesListViewScreenViewController: UISearchBarDelegate {
+
+    /// A delegate method that gets called after user taps Search button
+    /// - Parameter searchBar: An instance of UISearchBar on which this method is called
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let location = searchBar.text, !location.isEmpty else { return }
+
+        viewModel.openDetailsForPlace(with: location)
     }
 }
