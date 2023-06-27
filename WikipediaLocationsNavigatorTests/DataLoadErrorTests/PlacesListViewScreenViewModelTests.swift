@@ -23,7 +23,6 @@ final class PlacesListViewScreenViewModelTests: XCTestCase {
     func testThatViewModelCorrectlySetsTheErrorState() {
         let networkService = MockRequestHandler()
         networkService.toFail = true
-        let application = MockUIApplication()
         let viewModel = PlacesListViewScreenViewModel(networkService: networkService)
         let view = MockPlacesListViewScreenViewController()
         viewModel.view = view
@@ -42,7 +41,6 @@ final class PlacesListViewScreenViewModelTests: XCTestCase {
 
     func testThatViewModelCorrectlySetsTheSuccessState() {
         let networkService = MockRequestHandler()
-        let application = MockUIApplication()
         let viewModel = PlacesListViewScreenViewModel(networkService: networkService)
         let view = MockPlacesListViewScreenViewController()
         viewModel.view = view
@@ -68,7 +66,6 @@ final class PlacesListViewScreenViewModelTests: XCTestCase {
     func testThatAppCanRetryThePreviouslyFailedNetworkRequest() {
         let networkService = MockRequestHandler()
         networkService.toFail = true
-        let application = MockUIApplication()
         let viewModel = PlacesListViewScreenViewModel(networkService: networkService)
         let view = MockPlacesListViewScreenViewController()
         viewModel.view = view

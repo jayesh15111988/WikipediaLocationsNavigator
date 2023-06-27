@@ -20,5 +20,133 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4DB9F2D-3D00-4B10-AAC8-F36D1E2EE500"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WikipediaLocationsNavigatorTests/NetworkTests/RequestHandlerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "testThatNetworkServiceCorrectlyHandlesResponseWithInvalidResponseCode()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B4DB9F2D-3D00-4B10-AAC8-F36D1E2EE500 - 423087bf40b1c8b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;WikipediaLocationsNavigator.Locations, WikipediaLocationsNavigator.DataLoadError&gt;) -&gt; () in WikipediaLocationsNavigatorTests.RequestHandlerTests.testThatNetworkServiceCorrectlyHandlesResponseWithInvalidResponseCode() -&gt; ()"
+                  moduleName = "WikipediaLocationsNavigatorTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jayeshkawli/Desktop/Xcode_projects/WikipediaLocationsNavigator/WikipediaLocationsNavigatorTests/NetworkTests/RequestHandlerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "B4DB9F2D-3D00-4B10-AAC8-F36D1E2EE500 - 423087bf40b1c8b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;WikipediaLocationsNavigator.Locations, WikipediaLocationsNavigator.DataLoadError&gt;) -&gt; () in WikipediaLocationsNavigatorTests.RequestHandlerTests.testThatNetworkServiceCorrectlyHandlesResponseWithInvalidResponseCode() -&gt; ()"
+                  moduleName = "WikipediaLocationsNavigatorTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jayeshkawli/Desktop/Xcode_projects/WikipediaLocationsNavigator/WikipediaLocationsNavigatorTests/NetworkTests/RequestHandlerTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F6805AC-7287-47DD-9EB1-D8C07BB9E52C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WikipediaLocationsNavigatorTests/NetworkTests/RequestHandlerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "testThatNetworkServiceCorrectlyHandlesResponseWithInvalidResponseCode()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A52ECE2-F192-41BE-A31C-5BBF02776F79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WikipediaLocationsNavigatorTests/NetworkTests/RequestHandlerTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "testThatNetworkServiceCorrectlyHandlesResponseWithInvalidResponseCode()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50BE2CF4-A4A8-4BE9-BA69-94E14D963DC3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WikipediaLocationsNavigator/NetworkRequest/RequestHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "request(type:route:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50BE2CF4-A4A8-4BE9-BA69-94E14D963DC3 - a26076760b1d26ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WikipediaLocationsNavigator.RequestHandler.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(type: &#x3c4;_0_0.Type, route: WikipediaLocationsNavigator.APIRoute, completion: (Swift.Result&lt;&#x3c4;_0_0, WikipediaLocationsNavigator.DataLoadError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WikipediaLocationsNavigator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jayeshkawli/Desktop/Xcode_projects/WikipediaLocationsNavigator/WikipediaLocationsNavigator/NetworkRequest/RequestHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "50BE2CF4-A4A8-4BE9-BA69-94E14D963DC3 - 61ce429f65781535"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WikipediaLocationsNavigator.RequestHandler.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(type: &#x3c4;_0_0.Type, route: WikipediaLocationsNavigator.APIRoute, completion: (Swift.Result&lt;&#x3c4;_0_0, WikipediaLocationsNavigator.DataLoadError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "WikipediaLocationsNavigator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jayeshkawli/Desktop/Xcode_projects/WikipediaLocationsNavigator/WikipediaLocationsNavigator/NetworkRequest/RequestHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "735">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
