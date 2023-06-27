@@ -11,13 +11,22 @@ import XCTest
 
 final class PlacesListViewScreenViewModelTests: XCTestCase {
 
-    func testThatViewModelOpensUniversalLinkForGivenPlace() {
+    func testThatViewModelOpensValidUniversalLinkForPlainTextPlace() {
         let networkService = MockRequestHandler()
         let application = MockUIApplication()
         let viewModel = PlacesListViewScreenViewModel(networkService: networkService, urlOpener: application)
 
         viewModel.openDetailsForPlace(with: "Boston")
         XCTAssertEqual(application.openedURL?.absoluteString, "wikipedia://places?WMFArticleURL=https://en.wikipedia.org/Boston")
+    }
+
+    func testThatViewModelOpensValidUniversalLinkForPlaceNameWithSpecialCharacters() {
+        let networkService = MockRequestHandler()
+        let application = MockUIApplication()
+        let viewModel = PlacesListViewScreenViewModel(networkService: networkService, urlOpener: application)
+
+        viewModel.openDetailsForPlace(with: "New York Suburb")
+        XCTAssertEqual(application.openedURL?.absoluteString, "wikipedia://places?WMFArticleURL=https://en.wikipedia.org/New%20York%20Suburb")
     }
 
     func testThatViewModelCorrectlySetsTheErrorState() {

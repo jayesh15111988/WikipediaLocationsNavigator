@@ -38,6 +38,8 @@ final class PlacesListViewScreenViewModel {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let locations):
+                    // Map from list of Decodable location objects to Location object
+                    // Locations with nil names are filtered out
                     let validLocations = locations.locations.map { $0.name }.compactMap { $0 }.map { Location(name: $0) }
                     self.view?.locationsLoaded(locations: validLocations)
                 case .failure(let dataLoadError):
@@ -53,18 +55,25 @@ final class PlacesListViewScreenViewModel {
 
     func openDetailsForPlace(with name: String) {
 
-        let urlString = wikipediaPageBaseURL + name
-        let urlToOpen = URL(string: urlString)
+        // Encode any special characters in the input place name
+        if let encodedName = name.addingPercentEncoding(withAllowedCharacters: .alphanumerics) {
 
-        guard let urlToOpen else {
-            view?.displayError(with: "The URL \(urlString) is invalid", tryAgain: false)
-            return
-        }
+            let urlString = wikipediaPageBaseURL + encodedName
+            let urlToOpen = URL(string: urlString)
 
-        let didOpenURL = urlOpener.openURL(urlToOpen)
+            guard let urlToOpen else {
+                view?.displayError(with: "The URL \(urlString) is invalid", tryAgain: false)
+                return
+            }
 
-        if !didOpenURL {
-            view?.displayError(with: "The URL \(urlString) cannot be opened", tryAgain: false)
+            let didOpenURL = urlOpener.openURL(urlToOpen)
+
+            if !didOpenURL {
+                view?.displayError(with: "The URL \(urlString) cannot be opened", tryAgain: false)
+            }
+
+        } else {
+            view?.displayError(with: "The entered place \(name) has invalid characters. Please enter alphanumeric characters in search box and try again", tryAgain: false)
         }
     }
 }

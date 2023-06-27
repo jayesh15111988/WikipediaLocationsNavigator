@@ -65,6 +65,31 @@ class PlacesListViewScreenViewController: UIViewController, PlacesListViewable {
         loadLocations()
     }
 
+    func displayError(with message: String, tryAgain: Bool = false) {
+        activityIndicatorView.stopAnimating()
+        let tryAgainAction: UIAlertAction
+
+        if tryAgain {
+            tryAgainAction = UIAlertAction(title: "Try Again", style: .default) { [weak self] action in
+                self?.activityIndicatorView.startAnimating()
+                self?.viewModel.retryLastRequest()
+            }
+        } else {
+            tryAgainAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+
+        self.alertDisplayUtility.showAlert(with: "Error", message: message, actions: [cancelAction, tryAgainAction], parentController: self)
+    }
+
+    func locationsLoaded(locations: [PlacesListViewScreenViewModel.Location]) {
+        self.locations = locations
+        tableView.reloadData()
+        activityIndicatorView.stopAnimating()
+    }
+
+    //MARK: Private methods
     private func setupViews() {
         self.title = viewModel.title
         self.view.backgroundColor = .white
@@ -103,30 +128,6 @@ class PlacesListViewScreenViewController: UIViewController, PlacesListViewable {
     private func loadLocations() {
         activityIndicatorView.startAnimating()
         viewModel.loadLocations()
-    }
-
-    func displayError(with message: String, tryAgain: Bool = false) {
-        activityIndicatorView.stopAnimating()
-        let tryAgainAction: UIAlertAction
-
-        if tryAgain {
-            tryAgainAction = UIAlertAction(title: "Try Again", style: .default) { [weak self] action in
-                self?.activityIndicatorView.startAnimating()
-                self?.viewModel.retryLastRequest()
-            }
-        } else {
-            tryAgainAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
-        }
-
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
-
-        self.alertDisplayUtility.showAlert(with: "Error", message: message, actions: [cancelAction, tryAgainAction], parentController: self)
-    }
-
-    func locationsLoaded(locations: [PlacesListViewScreenViewModel.Location]) {
-        self.locations = locations
-        tableView.reloadData()
-        activityIndicatorView.stopAnimating()
     }
 }
 
