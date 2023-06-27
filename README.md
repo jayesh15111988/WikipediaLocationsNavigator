@@ -1,7 +1,7 @@
 # iOS Assignment Wikipedia
 A repository for a test app that opens universal link in Wikipedia app and shows the place details on map
 
-## iOS Assessment | Albert Heijn
+## iOS Assessment | ABN Amro
 
 ### App Demo
 
